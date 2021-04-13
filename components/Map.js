@@ -1,4 +1,3 @@
-import { PinDropSharp } from "@material-ui/icons";
 import * as React from "react";
 
 export default class Map extends React.Component {
