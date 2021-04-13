@@ -38,3 +38,8 @@ The map is a basic implementation of the Here Map JavaScript SDK. The HERE API K
 - I used Next.js to ensure scalability. This approach enables us to implement server-side rendering (ssr) and automatic code splitting which increases response time and overall speed of the application. 
 
 - The application has been built to fetch update vehicle information at a set interval, in order to ensure the dashboard displays the most up to date data.
+
+## Libraries
+- React.js
+- Next.js
+- Material UI (UI framework)
