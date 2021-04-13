@@ -44,9 +44,10 @@ The map is a basic implementation of the Here Map JavaScript SDK. The HERE API K
 - Next.js
 - Material UI (UI framework)
 
-## TODO:
+## TODO (Maybe in the next sprint):
 - Dynamically Zoom into a selected vehicle on side drawer click
-- If more functionality will be added, convert the side drawer into a drawer menu. E.g. adding 'Map','Vehicles','Settings', etc., as their own induvidual pages since at the moment it is a basic single page application.
-- If intragrated will a proper backend that handles authentication and authorization we should add a login page
+- If more functionalities will be added, we should convert the side drawer into a drawer menu. E.g. adding 'Map','Vehicles','Settings', etc., as their own induvidual pages since at the moment it is a basic single page application.
+- If integrated will a proper backend that would handle authentication and authorization we should add a login page
 - A help page and tooltip to help users troubleshoot potential issues
 - A mobile version, maybe via react-native
+- Add a loading screen/message
