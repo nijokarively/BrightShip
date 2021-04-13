@@ -34,5 +34,13 @@ export default (req, res) => {
       lat: "42.7293284",
       lng: "-83.0397632",
     },
+    {
+      id: "005",
+      name: "EV605",
+      status: "inactive",
+      energy: "98",
+      lat: "42.8593284",
+      lng: "-83.0396032",
+    },
   ]);
 };
