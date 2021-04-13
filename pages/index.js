@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const API_URL = "http://localhost:3000/api/vehicles";
-async function fetchVehicles(url) {
+async function fetcher(url) {
   const res = await fetch(url);
   const json = await res.json();
   return json;
@@ -30,7 +30,22 @@ async function fetchVehicles(url) {
 export default function Home() {
   const classes = useStyles();
 
-  const { data, error } = useSWR(API_URL, fetchVehicles);
+  const { data, error } = useSWR(API_URL, fetcher, { refreshInterval: 1000 });
+
+  if (error) return (
+    <>
+      <Grid item xs={12}>
+        <Typography
+          className={classes.loading}
+          variant="h4"
+          component="h1"
+          gutterBottom
+        >
+        An error has occurred.
+        </Typography>
+      </Grid>
+    </>
+  );
 
   if (!data)
     return (
@@ -42,7 +57,7 @@ export default function Home() {
             component="h1"
             gutterBottom
           >
-            refreshing data
+            Fetching data ...
           </Typography>
         </Grid>
       </>
