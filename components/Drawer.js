@@ -26,7 +26,9 @@ let orange = "#f0b323";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-    minHeight: "100vh",
+    height: "100vh",
+    overflow: 'auto',
+    // minHeight: "100vh",
     backgroundColor: theme.palette.background.paper,
     color: theme.palette.secondary.main,
   },
